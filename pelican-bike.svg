@@ -1,0 +1,152 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600" role="img" aria-label="A pelican flying on a bicycle above the clouds">
+  <title>Pelican riding a flying bike</title>
+
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#bfe9ff"/>
+      <stop offset="1" stop-color="#eaf6ff"/>
+    </linearGradient>
+    <linearGradient id="body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#dfe6ea"/>
+    </linearGradient>
+    <linearGradient id="beak" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffb347"/>
+      <stop offset="1" stop-color="#e8891a"/>
+    </linearGradient>
+  </defs>
+
+  <!-- background -->
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <circle cx="690" cy="95" r="55" fill="#ffe27a"/>
+
+  <!-- high clouds -->
+  <g fill="#ffffff" opacity="0.9">
+    <circle cx="130" cy="90" r="34"/><circle cx="168" cy="100" r="26"/><circle cx="100" cy="102" r="22"/>
+    <circle cx="620" cy="150" r="28"/><circle cx="660" cy="158" r="20"/><circle cx="590" cy="160" r="18"/>
+  </g>
+
+  <!-- clouds BELOW the flying bike -->
+  <g fill="#ffffff" opacity="0.95">
+    <circle cx="180" cy="470" r="42"/><circle cx="235" cy="482" r="32"/><circle cx="130" cy="486" r="28"/>
+    <circle cx="560" cy="500" r="46"/><circle cx="620" cy="512" r="34"/><circle cx="505" cy="516" r="30"/>
+    <circle cx="380" cy="540" r="38"/><circle cx="430" cy="550" r="30"/><circle cx="335" cy="552" r="26"/>
+  </g>
+
+  <!-- ground far below -->
+  <rect y="575" width="800" height="25" fill="#cbe8a4"/>
+  <rect y="575" width="800" height="5" fill="#a7d178"/>
+  <!-- shadow on the ground -->
+  <ellipse cx="400" cy="576" rx="150" ry="9" fill="#000000" opacity="0.12"/>
+
+  <!-- wind streaks -->
+  <g stroke="#8fb7d6" stroke-width="6" stroke-linecap="round" opacity="0.75">
+    <line x1="40" y1="240" x2="120" y2="240"/>
+    <line x1="70" y1="300" x2="140" y2="300"/>
+    <line x1="50" y1="360" x2="115" y2="360"/>
+  </g>
+
+  <!-- ===== FLYING BIKE + PELICAN (lifted up) ===== -->
+  <g transform="translate(0,-150)">
+    <!-- wheels -->
+    <g>
+      <circle cx="240" cy="430" r="88" fill="none" stroke="#2b2b2b" stroke-width="16"/>
+      <circle cx="240" cy="430" r="88" fill="none" stroke="#cfd8dc" stroke-width="4"/>
+      <g stroke="#9aa7ad" stroke-width="3">
+        <line x1="240" y1="345" x2="240" y2="515"/>
+        <line x1="155" y1="430" x2="325" y2="430"/>
+        <line x1="180" y1="370" x2="300" y2="490"/>
+        <line x1="300" y1="370" x2="180" y2="490"/>
+      </g>
+      <circle cx="240" cy="430" r="10" fill="#2b2b2b"/>
+      <circle cx="560" cy="430" r="88" fill="none" stroke="#2b2b2b" stroke-width="16"/>
+      <circle cx="560" cy="430" r="88" fill="none" stroke="#cfd8dc" stroke-width="4"/>
+      <g stroke="#9aa7ad" stroke-width="3">
+        <line x1="560" y1="345" x2="560" y2="515"/>
+        <line x1="475" y1="430" x2="645" y2="430"/>
+        <line x1="500" y1="370" x2="620" y2="490"/>
+        <line x1="620" y1="370" x2="500" y2="490"/>
+      </g>
+      <circle cx="560" cy="430" r="10" fill="#2b2b2b"/>
+    </g>
+
+    <!-- frame (blue) -->
+    <g stroke="#1a73e8" stroke-width="13" stroke-linecap="round" fill="none">
+      <line x1="240" y1="430" x2="300" y2="300"/>
+      <line x1="240" y1="430" x2="400" y2="430"/>
+      <line x1="400" y1="430" x2="300" y2="300"/>
+      <line x1="300" y1="300" x2="540" y2="300"/>
+      <line x1="400" y1="430" x2="540" y2="300"/>
+      <line x1="540" y1="300" x2="560" y2="430"/>
+    </g>
+
+    <!-- pedals / crank -->
+    <g>
+      <circle cx="400" cy="430" r="14" fill="#2b2b2b"/>
+      <line x1="400" y1="430" x2="448" y2="470" stroke="#2b2b2b" stroke-width="10" stroke-linecap="round"/>
+      <line x1="400" y1="430" x2="352" y2="470" stroke="#2b2b2b" stroke-width="10" stroke-linecap="round"/>
+      <rect x="432" y="466" width="34" height="12" rx="4" fill="#3a3a3a"/>
+      <rect x="336" y="466" width="34" height="12" rx="4" fill="#3a3a3a"/>
+    </g>
+
+    <!-- seat -->
+    <path d="M262 300 q38 -14 76 0 q-10 16 -38 16 q-28 0 -38 -16 z" fill="#3a3a3a"/>
+
+    <!-- handlebars -->
+    <g stroke="#3a3a3a" stroke-width="9" stroke-linecap="round" fill="none">
+      <line x1="540" y1="300" x2="540" y2="268"/>
+      <path d="M505 262 q35 -18 70 0"/>
+    </g>
+    <circle cx="505" cy="262" r="7" fill="#111"/>
+    <circle cx="575" cy="262" r="7" fill="#111"/>
+
+    <!-- far wing (behind the body) -->
+    <path d="M300 205 q-90 -55 -175 -80 q40 75 125 118 q30 14 50 -38 z"
+          fill="#eef3f5" stroke="#9aa7ad" stroke-width="4"/>
+
+    <!-- legs to pedals -->
+    <g stroke="#e8891a" stroke-width="9" stroke-linecap="round" fill="none">
+      <line x1="330" y1="330" x2="360" y2="440"/>
+      <line x1="360" y1="440" x2="352" y2="472"/>
+      <line x1="355" y1="340" x2="440" y2="452"/>
+      <line x1="440" y1="452" x2="449" y2="472"/>
+    </g>
+
+    <!-- body -->
+    <ellipse cx="325" cy="240" rx="96" ry="76" fill="url(#body)" stroke="#9aa7ad" stroke-width="4"/>
+    <!-- tail feathers -->
+    <path d="M240 210 q-60 -16 -80 26 q40 2 60 12 z" fill="#eef3f5" stroke="#9aa7ad" stroke-width="4"/>
+
+    <!-- neck -->
+    <path d="M390 210 q40 -70 80 -70 q-30 30 -20 70 z" fill="url(#body)" stroke="#9aa7ad" stroke-width="4"/>
+
+    <!-- head -->
+    <circle cx="470" cy="150" r="42" fill="url(#body)" stroke="#9aa7ad" stroke-width="4"/>
+
+    <!-- beak: long upper bill + pouch (open, happy) -->
+    <path d="M500 132 q90 -20 130 -6 q-60 22 -128 20 z" fill="url(#beak)" stroke="#c9770f" stroke-width="4"/>
+    <path d="M502 156 q70 6 108 10 q-42 58 -108 26 z" fill="#f7c453" stroke="#c9770f" stroke-width="4"/>
+
+    <!-- eye -->
+    <circle cx="484" cy="138" r="9" fill="#fff"/>
+    <circle cx="487" cy="138" r="5" fill="#111"/>
+    <circle cx="489" cy="136" r="2" fill="#fff"/>
+
+    <!-- helmet -->
+    <path d="M432 126 q38 -46 84 -6 q-42 -10 -84 6 z" fill="#2f80ed" stroke="#1b5bb0" stroke-width="4"/>
+    <path d="M432 126 q42 -16 84 -6" fill="none" stroke="#1b5bb0" stroke-width="4"/>
+    <line x1="470" y1="128" x2="452" y2="150" stroke="#1b5bb0" stroke-width="5" stroke-linecap="round"/>
+
+    <!-- near wing (spread wide, in front) -->
+    <path d="M355 205 q95 -75 180 -120 q-35 80 -125 130 q-32 18 -55 -10 z"
+          fill="#eef3f5" stroke="#9aa7ad" stroke-width="4"/>
+    <path d="M420 150 q30 22 20 58" fill="none" stroke="#9aa7ad" stroke-width="4" stroke-linecap="round"/>
+  </g>
+
+  <!-- sparkles around the flying bike -->
+  <g fill="#ffe27a">
+    <path d="M600 210 l6 16 16 6 -16 6 -6 16 -6 -16 -16 -6 16 -6 z"/>
+    <path d="M140 190 l5 12 12 5 -12 5 -5 12 -5 -12 -12 -5 12 -5 z"/>
+    <path d="M280 120 l4 10 10 4 -10 4 -4 10 -4 -10 -10 -4 10 -4 z"/>
+  </g>
+</svg>
